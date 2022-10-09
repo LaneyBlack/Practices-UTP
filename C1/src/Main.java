@@ -1,8 +1,6 @@
-package c1;
-
 import javax.swing.*;
 
-public class Main {
+public class    Main {
     private JTable ctab;
     public void createTable(String countriesFileName) throws Exception {
         ctab = new CountryTable(countriesFileName).create();
@@ -22,7 +20,7 @@ public class Main {
     public static void main(String[] args)  {
         Main main = new Main();
         try {
-            main.createTable("C:\\PJATK\\UTP\\UTP\\src\\c1\\data\\countries.txt");
+            main.createTable("data/countries.txt");
             main.showGui();
         } catch(Exception exc) {
             JOptionPane.showMessageDialog(null, "Table creation failed, " + exc);
