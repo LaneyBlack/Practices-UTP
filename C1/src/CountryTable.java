@@ -1,6 +1,5 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +7,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 
 public class CountryTable {
 
@@ -16,7 +14,7 @@ public class CountryTable {
     private Object[][] data;
 
     public CountryTable(String sourceFileName) {
-        data = new Object[(int) countLines(sourceFileName)][4];
+        data = new Object[(int) countLines(sourceFileName) - 1][4];
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(sourceFileName));
             String text;
@@ -34,6 +32,7 @@ public class CountryTable {
         }
     }
 
+    @SuppressWarnings("resource")
     public long countLines(String fileName) {
         Path path = Paths.get(fileName);
         long lines = 0;
@@ -46,24 +45,32 @@ public class CountryTable {
     }
 
     public JTable create() {
-        JTable table = new JTable(data, columnNames) {
-            public Class getColumnClass(int column) {
-                return (column == 2) ? Integer.class : (column == 3) ? ImageIcon.class : String.class;
+        JTable jtable = new JTable(data, columnNames) {
+            //return correct column class
+            public Class<?> getColumnClass(int column) {
+                if (column == 2)
+                    return Integer.class;
+                else if (column == 3)
+                    return ImageIcon.class;
+                return String.class;
             }
 
+            //not editable
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
         };
-        table.setDefaultRenderer(Integer.class, new DefaultTableCellRenderer() {
+        //color of the population higher than 20 000
+        jtable.setDefaultRenderer(Integer.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
                 Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                c.setForeground(((Integer) value) > 20000 ? Color.RED : Color.BLACK);
+                if (value != null && value.getClass() == Integer.class)
+                    c.setForeground(((Integer) value) > 20000 ? Color.RED : Color.BLACK);
                 return c;
             }
         });
-        return table;
+        return jtable;
     }
 
 }
