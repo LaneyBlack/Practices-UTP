@@ -24,9 +24,10 @@ public class ListCreator<E> { // Uwaga: klasa musi być sparametrtyzowana
     public ListCreator<E> when(Selector<E> selector) {
         //List does not support remove method, so I had to create new List
         List<E> result = new ArrayList<>();
-        for (E element : mainList)
-            if (selector.select(element))
-                result.add(element);
+        if (!mainList.isEmpty())
+            for (E element : mainList)
+                if (selector.select(element))
+                    result.add(element);
         mainList = result;
         return this;
     }
