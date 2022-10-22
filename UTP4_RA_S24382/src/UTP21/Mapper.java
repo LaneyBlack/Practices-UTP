@@ -7,9 +7,9 @@
 package UTP21;
 
 
-public interface Mapper<V> { // Uwaga: interfejs musi być sparametrtyzowany
+public interface Mapper<V,R> { // Uwaga: interfejs musi być sparametrtyzowany
     //V - generic value
-    default V map (V value){
-        return value;
+    default R map (V value){
+        return (R)value;
     }
 }

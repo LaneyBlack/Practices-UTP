@@ -29,8 +29,11 @@ public class ListCreator<E>{ // Uwaga: klasa musi być sparametrtyzowana
         return this;
     }
 
-    public List<E> mapEvery(Mapper<E> mapper) {
-        mainList.replaceAll(mapper::map);
-        return mainList; //this is final method that returns List<E>
+    public <R> List<R> mapEvery(Mapper<E,R> mapper) {
+        List<R> result = new ArrayList();
+        for (E element : mainList) {
+            result.add(mapper.map(element));
+        }
+        return result; //this is final method that returns List<E>
     }
 }  
