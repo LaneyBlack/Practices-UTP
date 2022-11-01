@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Third homework is done.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Third homework repairs.">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/MousePressListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/ListCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/ListCreator1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,11 +53,21 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Issue.Navigation&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.UTP31.Main">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="UTP43" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="UTP43.Main" />
       <module name="UTP" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/C1/src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UTP43.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,19 +78,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="UTP31.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UTP21.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UTP21.Main" />
-      <module name="UTP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UTP21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,6 +98,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UTP41.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP41.Main" />
+      <module name="UTP" />
+      <option name="PROGRAM_PARAMETERS" value="Warszawa 100 Kielce 200 Szczecin 300" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UTP41.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UTP42.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP42.Main" />
+      <module name="UTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UTP42.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,12 +136,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.UTP42.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main1" />
+      <item itemvalue="Application.UTP31.Main" />
+      <item itemvalue="Application.UTP41.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.UTP42.Main" />
+        <item itemvalue="Application.UTP41.Main" />
         <item itemvalue="Application.UTP31.Main" />
         <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.UTP21.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +171,7 @@
       <workItem from="1666712099683" duration="1679000" />
       <workItem from="1666731422724" duration="935000" />
       <workItem from="1666894664407" duration="17000" />
+      <workItem from="1667334400389" duration="6322000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
