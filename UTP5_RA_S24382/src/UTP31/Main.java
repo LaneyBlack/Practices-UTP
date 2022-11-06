@@ -8,7 +8,7 @@ package UTP31;
 import java.util.*;
 import java.util.function.Predicate;
 
-public class Main1 {
+public class Main {
 
     static List<String> getPricesInPLN(List<String> destinations, double xrate) {
         return ListCreator.collectFrom(destinations)
@@ -16,6 +16,12 @@ public class Main1 {
                  *  selekcja wylotów z Warszawy (zaczynających się od WAW)
                  */
                 )
+                .when(new Predicate<String>() {
+                    @Override
+                    public boolean test(String s) {
+                        return s.startsWith("WAW");
+                    }
+                })
                 .mapEvery(element -> {
                             String[] values = element.split(" ", 3);
                             int price = Integer.parseInt(values[2]);
@@ -26,7 +32,6 @@ public class Main1 {
                          */
                 );
     }
-
     public static void main(String[] args) {
         // Lista destynacji: port_wylotu port_przylotu cena_EUR
         List<String> dest = Arrays.asList(

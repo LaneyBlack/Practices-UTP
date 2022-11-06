@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Third homework repairs.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/MousePressListener.java" afterDir="false" />
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Third homework is done.">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP4_RA_S24382/src/UTP21/Selector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP5_RA_S24382/src/UTP31/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP6_RA_S24382/src/UTP31/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP6_RA_S24382/src/UTP31/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/MousePressListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP43/MousePressListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +54,16 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Issue.Navigation&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="UTP45" />
       <recent name="UTP43" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.UTP41.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UTP43.Main" />
       <module name="UTP" />
@@ -72,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UTP31.Main1" />
+    <configuration name="UTP31.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP31.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
@@ -139,17 +144,16 @@
     <list>
       <item itemvalue="Application.UTP42.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main1" />
       <item itemvalue="Application.UTP31.Main" />
       <item itemvalue="Application.UTP41.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.UTP42.Main" />
         <item itemvalue="Application.UTP41.Main" />
         <item itemvalue="Application.UTP31.Main" />
-        <item itemvalue="Application.Main1" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.UTP31.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +176,10 @@
       <workItem from="1666731422724" duration="935000" />
       <workItem from="1666894664407" duration="17000" />
       <workItem from="1667334400389" duration="6322000" />
+      <workItem from="1667405147964" duration="3586000" />
+      <workItem from="1667415530782" duration="1515000" />
+      <workItem from="1667476634882" duration="900000" />
+      <workItem from="1667553513907" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>

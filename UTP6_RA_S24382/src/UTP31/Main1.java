@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import java.util.*; /*<-- niezbędne importy */
 
 
-public class Main {
+public class Main1 {
 
   public static void main(String[] args) {
     // Lista destynacji: port_wylotu port_przylotu cena_EUR 
