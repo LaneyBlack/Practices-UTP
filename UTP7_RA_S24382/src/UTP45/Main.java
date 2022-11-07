@@ -75,14 +75,14 @@ public class Main {
     System.out.println(toCombine);
     XList<XList<String>> cres = toCombine.combine();
     System.out.println(cres);
-//
-//    // collect i join
-//    XList<String> j1 = cres.collect( list -> list.join());
-//    System.out.println(j1.join(" "));
-//    XList<String> j2 =cres.collect( list -> list.join("-"));
-//    System.out.println(j2.join(" "));
-//
-//    // forEachWithIndex
+
+    // collect i join
+    XList<String> j1 = cres.collect( list -> list.join());
+    System.out.println(j1.join(" "));
+    XList<String> j2 = cres.collect( list -> list.join("-"));
+    System.out.println(j2.join(" "));
+
+//     forEachWithIndex
 //    XList<Integer> lmod = XList.of(1,2,8, 10, 11, 30, 3, 4);
 //    lmod.forEachWithIndex( (e, i) -> lmod.set(i, e*2));
 //    System.out.println(lmod);

@@ -1,22 +1,23 @@
 package UTP45;
 
 import java.util.*;
+import java.util.function.Function;
 
 public class XList<E> implements List<E> {
-    private ArrayList<E> dataList;
+    private ArrayList<E> data; //could have created my own list, but it's just a studies example
 
     //Creators--------------------------------------
     public XList() {
-        dataList = new ArrayList<>();
+        data = new ArrayList<>();
     }
 
     public XList(Collection<E> collection) {
-        this.dataList = new ArrayList(collection);
+        this.data = new ArrayList<>(collection);
     }
 
     public XList(E... elements) {
-        dataList = new ArrayList<>();
-        Collections.addAll(dataList, elements);
+        data = new ArrayList<>();
+        Collections.addAll(data, elements);
     }
 
     public static <T> XList of(T... elements) {
@@ -32,7 +33,7 @@ public class XList<E> implements List<E> {
     public static XList<String> charsOf(String input) {
         XList<String> xList = new XList<>();
         for (int i = 0; i < input.length(); i++)
-            xList.getDataList().add(String.valueOf(input.charAt(i)));
+            xList.getData().add(String.valueOf(input.charAt(i)));
         return xList;
     }
 
@@ -42,12 +43,12 @@ public class XList<E> implements List<E> {
         if (separators.length == 0) {
             values = input.split(" ");
             for (String val : values)
-                xList.getDataList().add(val);
+                xList.getData().add(val);
         } else
             for (String separator : separators) {
                 values = input.split(separator);
                 for (String val : values)
-                    xList.getDataList().add(val);
+                    xList.getData().add(val);
             }
         return xList;
     }
@@ -55,21 +56,21 @@ public class XList<E> implements List<E> {
     //Functions--------------------------------------
     public XList<E> union(Collection<? extends E> collection) {
         XList<E> result = new XList<>();
-        result.addAll(dataList);
+        result.addAll(data);
         result.addAll(collection);
         return result;
     }
 
     public XList<E> union(E... elements) {
         XList<E> result = new XList<>();
-        result.addAll(dataList);
+        result.addAll(data);
         result.addAll(Arrays.asList(elements));
         return result;
     }
 
     public XList<E> diff(Collection<? extends E> collection) {
         XList<E> result = new XList<>();
-        for (E element : dataList) {
+        for (E element : data) {
             if (!collection.contains(element))
                 result.add(element);
         }
@@ -78,35 +79,32 @@ public class XList<E> implements List<E> {
 
     public XList<E> unique() {
         XList<E> result = new XList<>();
-        for (E element : dataList) {
-            if (!result.contains(element)){
+        for (E element : data) {
+            if (!result.contains(element)) {
                 result.add(element);
             }
         }
         return result;
     }
 
-    public XList<XList<E>> combine(){
-        XList<XList<E>>
-        ArrayList<List> output = new ArrayList<>();
+    public XList<XList<E>> combine() {
+        List<List<E>> input = new ArrayList<>((Collection<? extends List<E>>) this);
+        XList<XList<E>> output = new XList<>();
         int numberOfActs = 1; //how many combinations can we create
-        int[] lengths = new int[input.size()], indexes = new int[input.size()];
-        for (int i = 0; i < lengths.length; i++) {
-            lengths[i] = input.get(i).size();
+        int[] borders = new int[input.size()], indexes = new int[input.size()];
+        for (int i = 0; i < borders.length; i++) {
+            borders[i] = input.get(i).size();
             indexes[i] = 0; //setting start indexes at first
-            numberOfActs *= lengths[i]; //it's just all the collections lengths multiply
+            numberOfActs *= borders[i]; //it's just all the collections lengths multiply
         }
         for (int act = 0; act < numberOfActs; act++) {
-            ArrayList toAdd = new ArrayList();
-            for (int i = 0; i < indexes.length; i++) {
+            ArrayList<E> toAdd = new ArrayList<>();
+            for (int i = 0; i < indexes.length; i++)
                 toAdd.add(input.get(i).get(indexes[i]));
-                System.out.print(input.get(i).get(indexes[i]));
-            }
-            output.add(toAdd);
-            System.out.println();
+            output.add(XList.of(toAdd));
             indexes[0]++;
             for (int i = 1; i < indexes.length; i++)
-                if (indexes[i - 1] == lengths[i - 1]) {
+                if (indexes[i - 1] == borders[i - 1]) {
                     indexes[i - 1] = 0;
                     indexes[i]++;
                 }
@@ -114,139 +112,157 @@ public class XList<E> implements List<E> {
         return output;
     }
 
+    public <R> XList<R> collect(Function<E, R> function) {
+        ArrayList<R> result = new ArrayList<>();
+        for (E element : data)
+            result.add(function.apply(element));
+        return XList.of(result);
+    }
+
+    public String join(String... separators) {
+        StringBuilder result = new StringBuilder();
+        for (int i=0; i<data.size();i++) {
+            result.append(data.get(i));
+            if (separators.length > 0 && i!= data.size()-1 )
+                for (String sep : separators)
+                    result.append(sep);
+        }
+        return result.toString();
+    }
+
     //Implementations-------------------------------------------------------------------------------------
     @Override
     public String toString() {
-        return dataList.toString();
+        return data.toString();
     }
 
     @Override
     public int size() {
-        return dataList.size();
+        return data.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return dataList.isEmpty();
+        return data.isEmpty();
     }
 
     @Override
     public boolean contains(Object o) {
-        return dataList.contains(o);
+        return data.contains(o);
     }
 
     @Override
     public Iterator<E> iterator() {
-        return dataList.iterator();
+        return data.iterator();
     }
 
     @Override
     public Object[] toArray() {
-        return dataList.toArray();
+        return data.toArray();
     }
 
     @Override
     public <T> T[] toArray(T[] a) {
-        return dataList.toArray(a);
+        return data.toArray(a);
     }
 
     @Override
     public boolean add(E e) {
-        return dataList.add(e);
+        return data.add(e);
     }
 
     @Override
     public boolean remove(Object o) {
-        return dataList.remove(o);
+        return data.remove(o);
     }
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return dataList.containsAll(c);
+        return data.containsAll(c);
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        return dataList.addAll(c);
+        return data.addAll(c);
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return dataList.addAll(index, c);
+        return data.addAll(index, c);
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return dataList.removeAll(c);
+        return data.removeAll(c);
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        return dataList.retainAll(c);
+        return data.retainAll(c);
     }
 
     @Override
     public void clear() {
-        dataList.clear();
+        data.clear();
     }
 
     @Override
     public boolean equals(Object o) {
-        return dataList.equals(o);
+        return data.equals(o);
     }
 
     @Override
     public int hashCode() {
-        return dataList.hashCode();
+        return data.hashCode();
     }
 
     @Override
     public E get(int index) {
-        return dataList.get(index);
+        return data.get(index);
     }
 
     @Override
     public E set(int index, E element) {
-        return dataList.set(index, element);
+        return data.set(index, element);
     }
 
     @Override
     public void add(int index, E element) {
-        dataList.add(index, element);
+        data.add(index, element);
     }
 
     @Override
     public E remove(int index) {
-        return dataList.remove(index);
+        return data.remove(index);
     }
 
     @Override
     public int indexOf(Object o) {
-        return dataList.indexOf(o);
+        return data.indexOf(o);
     }
 
     @Override
     public int lastIndexOf(Object o) {
-        return dataList.lastIndexOf(o);
+        return data.lastIndexOf(o);
     }
 
     @Override
     public ListIterator<E> listIterator() {
-        return dataList.listIterator();
+        return data.listIterator();
     }
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        return dataList.listIterator(index);
+        return data.listIterator(index);
     }
 
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
-        return dataList.subList(fromIndex, toIndex);
+        return data.subList(fromIndex, toIndex);
     }
 
     //Getters/Setters-------------------------------
-    public List<E> getDataList() {
-        return dataList;
+    public List<E> getData() {
+        return data;
     }
 }
