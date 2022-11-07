@@ -78,15 +78,15 @@ package UTP44;
 //    test();
 //  }
 //}
-// Wynik na konsoli:
-/*    
-  Maybe has value aaa
-  Maybe is empty
-  10
-  Maybe has value 20
-  20
-  java.util.NoSuchElementException:  maybe is empty
-  Wartość niedostępna
-  Wartość niedostępna
-  Pies
-*/
+//// Wynik na konsoli:
+///*
+//  Maybe has value aaa
+//  Maybe is empty
+//  10
+//  Maybe has value 20
+//  20
+//  java.util.NoSuchElementException:  maybe is empty
+//  Wartość niedostępna
+//  Wartość niedostępna
+//  Pies
+//*/
