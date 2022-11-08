@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="homework 7">
-      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/MyFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Maybe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/XList.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/XList.java" afterDir="false" />
-    </list>
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Finished homework 7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +173,7 @@
       <workItem from="1667864870381" duration="880000" />
       <workItem from="1667866386085" duration="39000" />
       <workItem from="1667866438429" duration="42000" />
+      <workItem from="1667914706377" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
@@ -196,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667839862025</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished homework 7">
+      <created>1667914744992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667914744992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +219,8 @@
     </ignored-roots>
     <MESSAGE value="Third homework is done." />
     <MESSAGE value="Modifications in homework 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications in homework 7" />
+    <MESSAGE value="Finished homework 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished homework 7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
