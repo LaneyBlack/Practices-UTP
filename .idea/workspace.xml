@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Fourth homework init.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="homework 7">
+      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/MyFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Maybe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP42/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP44/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/XList.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP7_RA_S24382/src/UTP45/XList.java" afterDir="false" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -36,30 +39,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/PJATK/UTP4_BP_S24601/src/UTP21",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PJATK/UTP4_BP_S24601/src/UTP21&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="UTP43" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UTP45.Main">
+  <component name="RunManager" selected="Application.UTP42.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UTP43.Main" />
       <module name="UTP" />
@@ -73,13 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UTP41.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UTP41.Main" />
+    <configuration name="UTP42.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP42.Main" />
       <module name="UTP" />
-      <option name="PROGRAM_PARAMETERS" value="Warszawa 100 Kielce 200 Szczecin 300" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UTP41.*" />
+          <option name="PATTERN" value="UTP42.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UTP42.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UTP42.Main" />
+    <configuration name="UTP44.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP44.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UTP42.*" />
+          <option name="PATTERN" value="UTP44.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,19 +140,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.UTP44.Main" />
       <item itemvalue="Application.UTP45.Main" />
       <item itemvalue="Application.UTP45t.Main" />
       <item itemvalue="Application.UTP42.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.UTP41.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UTP42.Main" />
+        <item itemvalue="Application.UTP44.Main" />
         <item itemvalue="Application.UTP45.Main" />
         <item itemvalue="Application.UTP45t.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.UTP42.Main" />
-        <item itemvalue="Application.UTP41.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +176,11 @@
       <workItem from="1666894664407" duration="17000" />
       <workItem from="1667334400389" duration="6322000" />
       <workItem from="1667749807888" duration="9485000" />
+      <workItem from="1667839785258" duration="174000" />
+      <workItem from="1667856553795" duration="6283000" />
+      <workItem from="1667864870381" duration="880000" />
+      <workItem from="1667866386085" duration="39000" />
+      <workItem from="1667866438429" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
@@ -182,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666177832828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modifications in homework 7">
+      <created>1667839862025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667839862025</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +218,8 @@
       <path value="$PROJECT_DIR$/CwiczeniaUTP" />
     </ignored-roots>
     <MESSAGE value="Third homework is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Third homework is done." />
+    <MESSAGE value="Modifications in homework 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications in homework 7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

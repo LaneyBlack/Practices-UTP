@@ -11,12 +11,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
 
 /*<-- niezbędne import */
 public class Main {
     public static void main(String[] args) throws IOException {
-        Function<String, List<String>> flines = (filePath) -> {
+        MyFunction<String, List<String>> flines = (filePath) -> {
             List<String> result = new ArrayList<>();
             try {
                 BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
@@ -28,13 +27,13 @@ public class Main {
             }
             return result;
         };
-        Function<List<String>, String> join = (list) -> {
+        MyFunction<List<String>, String> join = (list) -> {
             StringBuilder result = new StringBuilder();
             for (String element : list)
                 result.append(element);
             return result.toString();
         };
-        Function<String, List<Integer>> collectInts = (input) -> {
+        MyFunction<String, List<Integer>> collectInts = (input) -> {
             List<Integer> result = new ArrayList<>();
             StringBuilder number = new StringBuilder();
             for (int i = 0; i < input.length(); i++) {
@@ -50,7 +49,7 @@ public class Main {
                 result.add(Integer.parseInt(number.toString()));
             return result;
         };
-        Function<List<Integer>, Integer> sum = (list) -> {
+        MyFunction<List<Integer>, Integer> sum = (list) -> {
             int result = 0;
             for (int value : list)
                 result += value;

@@ -1,6 +1,8 @@
 package UTP45;
 
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class XList<E> implements List<E> {
@@ -128,6 +130,12 @@ public class XList<E> implements List<E> {
                     result.append(sep);
         }
         return result.toString();
+    }
+
+    public void forEachWithIndex(BiConsumer<E, Integer> consumer){
+        for (int i = 0; i < data.size(); i++) {
+            consumer.accept(data.get(i), i);
+        }
     }
 
     //Implementations-------------------------------------------------------------------------------------
