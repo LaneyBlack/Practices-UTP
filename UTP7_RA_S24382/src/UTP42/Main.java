@@ -17,14 +17,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         MyFunction<String, List<String>> flines = (filePath) -> {
             List<String> result = new ArrayList<>();
-            try {
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
-                String text;
-                while ((text = bufferedReader.readLine()) != null)
-                    result.add(text);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
+            String text;
+            while ((text = bufferedReader.readLine()) != null)
+                result.add(text);
             return result;
         };
         MyFunction<List<String>, String> join = (list) -> {

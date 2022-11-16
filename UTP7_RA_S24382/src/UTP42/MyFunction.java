@@ -13,6 +13,5 @@ public interface MyFunction<T,R> extends Function<T,R> {
         }
     }
 
-
     R applyThrowing(T type) throws Exception;
 }
