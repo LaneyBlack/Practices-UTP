@@ -23,6 +23,7 @@ public class CustomersPurchaseSortFind {
                 customers.add(new Purchase(values[0], values[1], values[2],
                         Double.valueOf(values[3]), Double.valueOf(values[4])));
             }
+            bufferedReader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
