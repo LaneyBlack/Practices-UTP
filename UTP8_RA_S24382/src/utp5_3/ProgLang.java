@@ -39,13 +39,6 @@ public class ProgLang {
     }
 
     public Map<String, LinkedHashSet> getLangsMapSortedByNumOfProgs() {
-//        LinkedHashMap<String, LinkedHashSet> tmp = new LinkedHashMap<>(languages);
-//        LinkedHashMap<String, LinkedHashSet> result = new LinkedHashMap<>();
-//        tmp.entrySet()
-//                .stream()
-//                .sorted(Map.Entry.comparingByValue((l1, l2) -> l2.size() - l1.size()))
-//                .forEachOrdered(x -> result.put(x.getKey(), x.getValue()));
-//        return result;
         return sort(languages, (l1, l2) -> l2.getValue().size() - l1.getValue().size());
     }
 
