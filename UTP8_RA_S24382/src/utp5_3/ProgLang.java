@@ -39,18 +39,18 @@ public class ProgLang {
     }
 
     public Map<String, LinkedHashSet> getLangsMapSortedByNumOfProgs() {
-        return sort(languages, (l1, l2) -> l2.getValue().size() - l1.getValue().size());
+        return sorted(languages, (l1, l2) -> l2.getValue().size() - l1.getValue().size());
     }
 
     public Map<Character, LinkedHashSet> getProgsMapSortedByNumOfLangs() {
-        return sort(emps, (l1, l2) -> l2.getValue().size() - l1.getValue().size());
+        return sorted(emps, (l1, l2) -> l2.getValue().size() - l1.getValue().size());
     }
 
     public Map<Character, LinkedHashSet> getProgsMapForNumOfLangsGreaterThan(int i) {
-        return filter(emps, (l1) -> l1.getValue().size() > i);
+        return filtered(emps, (l1) -> l1.getValue().size() > i);
     }
 
-    public <K, V> Map<K, LinkedHashSet> sort(Map<K, LinkedHashSet<V>> map, Comparator<Map.Entry<K, LinkedHashSet<V>>> comparator) {
+    public <K, V> Map<K, LinkedHashSet> sorted(Map<K, LinkedHashSet<V>> map, Comparator<Map.Entry<K, LinkedHashSet<V>>> comparator) {
         LinkedList<Map.Entry<K, LinkedHashSet<V>>> elements = new LinkedList<>(map.entrySet());
         Collections.sort(elements, comparator);
         Map<K, LinkedHashSet> result = new LinkedHashMap<>();
@@ -59,7 +59,7 @@ public class ProgLang {
         return result;
     }
 
-    public <K, V> Map<K, LinkedHashSet> filter(Map<K, LinkedHashSet<V>> map, Predicate<Map.Entry<K, LinkedHashSet<V>>> predicate) {
+    public <K, V> Map<K, LinkedHashSet> filtered(Map<K, LinkedHashSet<V>> map, Predicate<Map.Entry<K, LinkedHashSet<V>>> predicate) {
         LinkedList<Map.Entry<K, LinkedHashSet<V>>> elements = new LinkedList<>(map.entrySet());
         Map<K, LinkedHashSet> result = new LinkedHashMap<>();
         for (Map.Entry<K, LinkedHashSet<V>> element : elements)

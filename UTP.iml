@@ -12,6 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/UTP6_RA_S24382/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP7_RA_S24382/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP8_RA_S24382/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UTP9_RA_S24382/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UTP10_RA_S24382/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
