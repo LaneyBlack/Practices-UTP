@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP8 work in progress:&#10;Task 1 and 2 done.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP8_RA_S24382/src/utp5_3/ProgLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP8_RA_S24382/src/utp5_3/ProgLang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PJATK/UTP4_BP_S24601/src/UTP21&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/PJATK/SKJ/Projects/TCPClient",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="UTP43" />
@@ -182,6 +184,8 @@
       <workItem from="1669369283841" duration="176000" />
       <workItem from="1669483771078" duration="3822000" />
       <workItem from="1669654236633" duration="980000" />
+      <workItem from="1669740955969" duration="234000" />
+      <workItem from="1669820890926" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
