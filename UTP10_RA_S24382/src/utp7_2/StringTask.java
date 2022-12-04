@@ -24,7 +24,7 @@ public class StringTask implements Runnable {
         state = TaskState.RUNNING;
         String add = text;
         while (count > 1 && state == TaskState.RUNNING) {
-            text += add;
+            text = text + add;
             count--;
         }
         if (state == TaskState.RUNNING)
