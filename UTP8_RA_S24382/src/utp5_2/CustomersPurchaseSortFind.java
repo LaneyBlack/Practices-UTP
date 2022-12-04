@@ -37,7 +37,6 @@ public class CustomersPurchaseSortFind {
                 Collections.sort(customers, Comparator.comparing(Purchase::getId));
                 break;
             case "NAZWISKA":
-//                Collections.sort(customers, (p1,p2) -> p2.getName().split(" ")[0].length()-p1.getName().split(" ")[0].length());
                 Collections.sort(customers, Comparator.comparing(Purchase::getName));
                 break;
             case "KOSZTY":

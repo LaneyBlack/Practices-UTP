@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP8 work in progress:&#10;Task 1 and 2 done.">
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="Finished homework 8.">
+      <change afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_1/Letters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/TaskState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP8_RA_S24382/src/utp5_2/CustomersPurchaseSortFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP8_RA_S24382/src/utp5_2/CustomersPurchaseSortFind.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -42,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/PJATK/SKJ/Projects/TCPClient",
+    "last_opened_file_path": "C:/PJATK/UTP4_BP_S24601/src/UTP21",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,21 +55,22 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="utp7_2" />
       <recent name="UTP43" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.utp6_2.Main">
-    <configuration name="UTP45.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UTP45.Main" />
+  <component name="RunManager" selected="Application.utp7_3.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utp7_1.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UTP45.*" />
+          <option name="PATTERN" value="utp7_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="utp5_1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utp5_1.Main" />
+    <configuration name="UTP42.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UTP42.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utp5_1.*" />
+          <option name="PATTERN" value="UTP42.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="utp5_2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utp5_2.Main" />
+    <configuration name="utp5_3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utp5_3.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utp5_2.*" />
+          <option name="PATTERN" value="utp5_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="utp6_1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utp6_1.Main" />
+    <configuration name="utp7_2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utp7_2.Main" />
       <module name="UTP" />
+      <option name="PROGRAM_PARAMETERS" value="abort" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utp6_1.*" />
+          <option name="PATTERN" value="utp7_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="utp6_2.Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="utp6_2.Main" />
+    <configuration name="utp7_3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utp7_3.Main" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utp6_2.*" />
+          <option name="PATTERN" value="utp7_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,19 +143,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.utp6_2.Main" />
-      <item itemvalue="Application.utp6_1.Main" />
-      <item itemvalue="Application.utp5_2.Main" />
-      <item itemvalue="Application.utp5_1.Main" />
-      <item itemvalue="Application.UTP45.Main" />
+      <item itemvalue="Application.utp7_3.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.utp7_2.Main" />
+      <item itemvalue="Application.utp5_3.Main" />
+      <item itemvalue="Application.UTP42.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.utp6_2.Main" />
-        <item itemvalue="Application.utp6_1.Main" />
-        <item itemvalue="Application.utp5_2.Main" />
-        <item itemvalue="Application.utp5_1.Main" />
-        <item itemvalue="Application.UTP45.Main" />
+        <item itemvalue="Application.utp7_3.Main" />
+        <item itemvalue="Application.utp7_2.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.utp5_3.Main" />
+        <item itemvalue="Application.UTP42.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -173,19 +179,15 @@
       <workItem from="1666894664407" duration="17000" />
       <workItem from="1667334400389" duration="6322000" />
       <workItem from="1667749807888" duration="9485000" />
-      <workItem from="1667931349124" duration="757000" />
-      <workItem from="1668438769119" duration="1056000" />
-      <workItem from="1668439943864" duration="7075000" />
-      <workItem from="1668527900819" duration="1096000" />
-      <workItem from="1668609991743" duration="3391000" />
-      <workItem from="1669053437178" duration="1670000" />
-      <workItem from="1669212944105" duration="9411000" />
-      <workItem from="1669365808026" duration="621000" />
-      <workItem from="1669369283841" duration="176000" />
-      <workItem from="1669483771078" duration="3822000" />
-      <workItem from="1669654236633" duration="980000" />
-      <workItem from="1669740955969" duration="234000" />
-      <workItem from="1669820890926" duration="56000" />
+      <workItem from="1667839785258" duration="174000" />
+      <workItem from="1667856553795" duration="6283000" />
+      <workItem from="1667864870381" duration="880000" />
+      <workItem from="1667866386085" duration="39000" />
+      <workItem from="1667866438429" duration="42000" />
+      <workItem from="1667914706377" duration="283000" />
+      <workItem from="1668196641078" duration="709000" />
+      <workItem from="1668953572393" duration="7312000" />
+      <workItem from="1670172255031" duration="1394000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
@@ -194,7 +196,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666177832828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modifications in homework 7">
+      <created>1667839862025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667839862025</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished homework 7">
+      <created>1667914744992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667914744992</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished homework 7.">
+      <created>1668197328322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668197328322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,18 +239,10 @@
       <path value="$PROJECT_DIR$/CwiczeniaUTP" />
     </ignored-roots>
     <MESSAGE value="Third homework is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Third homework is done." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/UTP9_RA_S24382/src/utp6_1/Finder.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Modifications in homework 7" />
+    <MESSAGE value="Finished homework 7" />
+    <MESSAGE value="Finished homework 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished homework 7." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
