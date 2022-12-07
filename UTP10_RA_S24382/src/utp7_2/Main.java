@@ -17,7 +17,7 @@ public class Main {
         try {
           Thread.sleep(1000);
           synchronized (task) {
-            task.abort();
+            task.interrupt();
           }
         } catch (InterruptedException e) {
           throw new RuntimeException(e);

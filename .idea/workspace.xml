@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP10 Task 1 and 2 done.&#10;3 stared.">
-      <change afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/ServerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/TaskState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/StringTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_2/StringTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP10_RA_S24382/src/utp7_4/ServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.customizations"
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -65,14 +66,13 @@
       <recent name="utp7_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.utp7_4.Main">
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utp7_4.Main1" />
+  <component name="RunManager" selected="Application.utp7_2.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utp7_1.Main" />
       <module name="UTP" />
-      <option name="PROGRAM_PARAMETERS" value="7477" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utp7_4.*" />
+          <option name="PATTERN" value="utp7_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,23 +147,26 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.utp7_4.Main" />
       <item itemvalue="Application.utp7_2.Main1" />
-      <item itemvalue="Application.utp7_4.Main1" />
       <item itemvalue="Application.utp7_3.Main" />
       <item itemvalue="Application.utp7_2.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.utp7_4.Main" />
         <item itemvalue="Application.utp7_2.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.utp7_4.Main" />
         <item itemvalue="Application.utp7_2.Main1" />
-        <item itemvalue="Application.utp7_4.Main1" />
         <item itemvalue="Application.utp7_3.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Home\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="" />
@@ -192,6 +195,8 @@
       <workItem from="1668196641078" duration="709000" />
       <workItem from="1668953572393" duration="7312000" />
       <workItem from="1670172255031" duration="7534000" />
+      <workItem from="1670344956342" duration="153000" />
+      <workItem from="1670431352551" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>

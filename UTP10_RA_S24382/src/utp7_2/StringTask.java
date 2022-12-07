@@ -1,7 +1,7 @@
 package utp7_2;
 
 public class StringTask implements Runnable {
-    private String text;
+    private volatile String text;
     private int count;
     private TaskState state;
 
@@ -23,20 +23,24 @@ public class StringTask implements Runnable {
     public void run() {
         state = TaskState.RUNNING;
         String add = text;
-        while (count > 1 && state == TaskState.RUNNING) {
+        while (count > 1 && !isInterrupted()) {
             text = text + add;
             count--;
         }
-        if (state == TaskState.RUNNING)
+        if (!isInterrupted())
             state = TaskState.READY;
     }
 
-    public void abort() {
+    public void interrupt() {
         state = TaskState.ABORTED;
     }
 
     public boolean isDone() {
         return state == TaskState.READY || state == TaskState.ABORTED;
+    }
+
+    public boolean isInterrupted(){
+        return state == TaskState.ABORTED;
     }
 
     public TaskState getState() {

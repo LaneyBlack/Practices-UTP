@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
 public class ServerThread<R> extends FutureTask<R> {
@@ -14,9 +15,9 @@ public class ServerThread<R> extends FutureTask<R> {
     private TaskState state;
 
     public ServerThread(Socket socket, R result) {
-        super(new Runnable() {
+        super(new Callable<R>() {
             @Override
-            public void run() {
+            public R call() {
                 try {
                     BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
@@ -41,8 +42,9 @@ public class ServerThread<R> extends FutureTask<R> {
                     System.out.println("Socket closing exception");
                     throw new RuntimeException();
                 }
+                return result;
             }
-        }, result);
+        });
         this.state = TaskState.CREATED;
         this.socket = socket;
     }

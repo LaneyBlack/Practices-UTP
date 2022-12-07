@@ -48,16 +48,16 @@ public class Main {
                 if (client.isConnected()) {
                     System.out.println("Client " + client.getLocalAddress() + ":" + client.getLocalPort() + " is connected");
                     String result = "";
-                    executor.execute(new ServerThread<String>(client, result));
+                    executor.execute(new ServerThread<>(client, result));
                     results.add(result);
                 }
             } catch (IOException e) {
                 System.out.println("Accept failed");
                 System.exit(-1);
             }
-            if (argument.equals("abort")){
+            if (argument.equals("abort")) {
                 System.out.println("Aborting");
-                Thread stopper = new Thread(()->{
+                Thread stopper = new Thread(() -> {
                     try {
                         Thread.sleep(10000);
                         synchronized (executor) {
