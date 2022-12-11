@@ -1,6 +1,6 @@
 package utp7_4;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import utp7_3.TaskState;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,11 +10,11 @@ import java.net.Socket;
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
-public class ServerThread<R> extends FutureTask<R> {
+public class ServerTask<R> extends FutureTask<R> {
     private final Socket socket;
     private TaskState state;
 
-    public ServerThread(Socket socket, R result) {
+    public ServerTask(Socket socket, R result) {
         super(new Callable<R>() {
             @Override
             public R call() {
@@ -23,16 +23,22 @@ public class ServerThread<R> extends FutureTask<R> {
                     PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
                     String word = in.readLine(), result = "";
                     System.out.println(word);
-                    Thread.sleep(7000);
-                    for (int i = 0; i < 100; i++)
+                    Thread.sleep(8000);
+                    while (result.length() < 100)
                         result += word;
-                    System.out.println(result);
+                    System.out.println("To Client" + result);
                     out.println(result);
                     out.println("Done");
+                    word = in.readLine();
+                    if (word.equals("abort"))
+                        synchronized (Main.getExecutor()) {
+                            Main.getExecutor().shutdown();
+                        }
                 } catch (IOException e1) {
-                    System.out.println("Run exception");
+                    System.out.println("Read exception");
                     throw new RuntimeException();
                 } catch (InterruptedException e) {
+                    System.out.println("Sleep exception");
                     throw new RuntimeException(e);
                 }
 

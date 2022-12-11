@@ -31,7 +31,7 @@ public class StringTask implements Runnable {
             state = TaskState.READY;
     }
 
-    public void interrupt() {
+    public void abort() {
         state = TaskState.ABORTED;
     }
 
