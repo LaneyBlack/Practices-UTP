@@ -12,8 +12,6 @@ import java.util.Scanner;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import static java.lang.Thread.sleep;
-
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         final ArrayList<Towar> towary = new ArrayList<>();
@@ -40,7 +38,7 @@ public class Main {
         });
         Thread a = new Thread(() -> {
             try {
-                Scanner input = new Scanner(new File("UTP11_RA_S24382/src/utp8_1/test/test.txt"));
+                Scanner input = new Scanner(new File("../Towary.txt"));
                 String[] values;
                 double mass;
                 int id, count = 0;
