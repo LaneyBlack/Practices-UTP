@@ -9,7 +9,7 @@ public class Database {
     public Database(String url, TravelData travelData ) {
         this.travelData = travelData;
         try {
-            //ToDo Be Careful. You need to download and setup the sqlite library, for the project to work
+            //ToDo Be Careful. You need to download and setup the sqlite library, for the project to work: http://www.java2s.com/Code/Jar/s/Downloadsqlitejdbc372jar.htm#google_vignette
             Class.forName("org.sqlite.JDBC");
 //            connection = DriverManager.getDriver("net.sourceforge.jtds.jdbc.Driver").connect(url, null);
             connection = DriverManager.getConnection(url);
