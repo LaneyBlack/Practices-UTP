@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP11&#10;Task started...">
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP11&#10;Task 1 finished.">
+      <change afterPath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Travel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTP11_RA_S24382/src/utp8_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP11_RA_S24382/src/utp8_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/TravelData.java" beforeDir="false" afterPath="$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/TravelData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,9 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql"
+      "mysql",
+      "oracle",
+      "sqlserver"
     ]
   }
 }]]></component>
@@ -69,8 +74,10 @@
       <recent name="C:\PJATK\UTP\UTP11_RA_S24382\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\PJATK\UTP\UTP12_RA_S24382\src\UTP9_1" />
       <recent name="C:\PJATK\UTP" />
+      <recent name="C:\PJATK\UTP\UTP12_RA_S24382\src" />
+      <recent name="C:\PJATK\UTP\UTP12_RA_S24382\src\UTP9_1\data" />
+      <recent name="C:\PJATK\UTP\UTP12_RA_S24382\src\UTP9_1" />
       <recent name="C:\PJATK\UTP\UTP11_RA_S24382\src\utp8_1\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -261,6 +268,22 @@
     <MESSAGE value="UTP10 Task 3 and 4 modified, but not done. I can't see any sense in this." />
     <MESSAGE value="UTP11&#10;Task 1 finished." />
     <option name="LAST_COMMIT_MESSAGE" value="UTP11&#10;Task 1 finished." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/Travel.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UTP12_RA_S24382/src/UTP9_1/TravelData.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
