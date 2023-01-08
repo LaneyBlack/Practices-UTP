@@ -9,10 +9,14 @@ public class Database {
     public Database(String url, TravelData travelData ) {
         this.travelData = travelData;
         try {
-//            connection = DriverManager.getConnection(url, "s24382","");
+            //ToDo Be Careful. You need to download and setup the sqlite library, for the project to work
+            Class.forName("org.sqlite.JDBC");
+//            connection = DriverManager.getDriver("net.sourceforge.jtds.jdbc.Driver").connect(url, null);
             connection = DriverManager.getConnection(url);
         } catch (SQLException e) {
-                throw new RuntimeException(e);
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -20,13 +24,19 @@ public class Database {
         Statement statement = null;
         try {
             statement = connection.createStatement();
-            statement.execute("IF (SELECT * FROM TRAVELDATA) IS NULL CREATE TABLE TRAVELDATA (data TEXT);");
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO TRAVELDATA (data) VALUES (?)");
+            statement.execute("CREATE TABLE if not exists TRAVELDATA (data TEXT);");
+            PreparedStatement insert = connection.prepareStatement("INSERT INTO TRAVELDATA (data) VALUES (?)");
+            for (Travel travel : travelData.getData()) {
+                insert.setString(1, travel.toString());
+                insert.execute();
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     public void showGui() {
+        Window window = new Window(travelData.getData());
+        window.showGUI();
     }
 }

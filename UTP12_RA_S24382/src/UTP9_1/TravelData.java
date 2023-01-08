@@ -24,7 +24,8 @@ public class TravelData {
                         locale = new Locale(tmp[0], tmp[1]);
                     else
                         locale = new Locale(tmp[0]);
-                    data.add(new Travel(locale, values[1], LocalDate.parse(values[2]), LocalDate.parse(values[3]), values[4], NumberFormat.getInstance(locale).parse(values[5]), Currency.getInstance(values[6])));
+                    data.add(new Travel(locale, values[1], LocalDate.parse(values[2]), LocalDate.parse(values[3]),
+                            values[4], NumberFormat.getInstance(locale).parse(values[5]), Currency.getInstance(values[6])));
                 }
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
@@ -41,5 +42,9 @@ public class TravelData {
         for (Travel travel : data)
             result.add(travel.translate(new Locale(locale.split("_")[0], locale.split("_")[1]), dateFormat));
         return result;
+    }
+
+    public ArrayList<Travel> getData() {
+        return data;
     }
 }

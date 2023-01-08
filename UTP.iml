@@ -3,10 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/C1/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP4_RA_S24382/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/C1/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/UTP4_RA_S24382/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP3_RA_S24382/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP5_RA_S24382/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UTP6_RA_S24382/src" isTestSource="false" />
@@ -19,5 +16,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sqlite-jdbc-3.7.2" level="project" />
   </component>
 </module>

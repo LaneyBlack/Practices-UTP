@@ -20,7 +20,7 @@ public class Main {
         for (String od : odlist) System.out.println(od);
     }
     // --- część bazodanowa
-    String url = "jdbc:jtds:sqlserver://db-mssql.pjwstk.edu.pl/S24382"; /*<-- tu należy wpisać URL bazy danych */
+    String url = "jdbc:sqlite:database"; /*<-- tu należy wpisać URL bazy danych */
     Database db = new Database(url, travelData);
     db.create();
     db.showGui();

@@ -42,18 +42,35 @@ public class Travel {
                 "\t" + place + "\t" + cost + "\t" + currency;
     }
 
-    public String translate(Locale outLang, String dateFormat){
+    public String[] toParts() {
+        return new String[]{locale.toString(), country, dateOut.toString(), dateBack.toString(),
+                place, cost.toString(), currency.toString()};
+    }
+
+    public String[] toParts(Locale outLang) {
+        String[] result = new String[]{locale.toString(), country, dateOut.toString(), dateBack.toString(),
+                place, cost.toString(), currency.toString()};
+        for (Locale l : Locale.getAvailableLocales())
+            if (l.getDisplayCountry(locale).equals(country)) {
+                result[1] = l.getDisplayCountry(outLang);
+                break;
+            }
+        result[4] = words.getProperty(locale.getLanguage() + "_" + outLang.getLanguage() + "." + place, place);
+        result[5] = NumberFormat.getInstance(outLang).format(cost);
+        return result;
+    }
+
+    public String translate(Locale outLang, String dateFormat) {
         StringBuilder result = new StringBuilder();
-        for (Locale l: Locale.getAvailableLocales())
+        for (Locale l : Locale.getAvailableLocales())
             if (l.getDisplayCountry(locale).equals(country)) {
                 result.append(l.getDisplayCountry(outLang));
                 break;
             }
         DateTimeFormatter dtFormat = DateTimeFormatter.ofPattern(dateFormat);
         result.append("\t").append(dateOut.format(dtFormat)).append("\t").append(dateBack.format(dtFormat)).append("\t");
-        result.append(words.getProperty(locale.getLanguage() + "-" + outLang.getLanguage() + "." + place, place));
-        NumberFormat numberFormat = NumberFormat.getInstance(outLang);
-        result.append("\t").append(numberFormat.format(cost)).append("\t").append(currency);
+        result.append(words.getProperty(locale.getLanguage() + "_" + outLang.getLanguage() + "." + place, place));
+        result.append("\t").append(NumberFormat.getInstance(outLang).format(cost)).append("\t").append(currency);
         return result.toString();
     }
 }
