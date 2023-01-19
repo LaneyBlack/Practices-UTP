@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP12&#10;Record finished.&#10;Translate finished.&#10;Database finished.&#10;GUI finished.">
-      <change afterPath="$PROJECT_DIR$/UTP13_RA_S24382/src/utp10_1/operations/Divide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP13_RA_S24382/src/utp10_1/operations/ICalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP13_RA_S24382/src/utp10_1/operations/Multiply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP13_RA_S24382/src/utp10_1/operations/Subtract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP13_RA_S24382/src/utp10_1/operations/Summary.java" afterDir="false" />
+    <list default="true" id="b31aa4f0-e652-45ae-b9a0-23007988c731" name="Changes" comment="UTP13 finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/UTP11_RA_S24382/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/UTP11_RA_S24382/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +37,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -94,13 +89,26 @@
       <recent name="utp7_4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.utp10_1.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="FileCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utp8_1.test.FileCreator" />
       <module name="UTP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="utp8_1.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zad1.Main" />
+      <module name="UTP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zad1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,12 +169,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.utp10_1.Main" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.UTP9_1.Main" />
       <item itemvalue="Application.FileCreator" />
       <item itemvalue="Application.UTP11-1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.UTP9_1.Main" />
         <item itemvalue="Application.UTP11-1" />
         <item itemvalue="Application.FileCreator" />
@@ -217,6 +227,9 @@
       <workItem from="1673180844464" duration="12455000" />
       <workItem from="1673306572987" duration="411000" />
       <workItem from="1673564237137" duration="1201000" />
+      <workItem from="1673915442449" duration="1119000" />
+      <workItem from="1673916598923" duration="7000" />
+      <workItem from="1674145680482" duration="5881000" />
     </task>
     <task id="LOCAL-00001" summary="Third homework is done.">
       <created>1666177832828</created>
@@ -288,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673197746910</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="UTP13 finished">
+      <created>1673915641217</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673915641217</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +338,8 @@
     <MESSAGE value="UTP11&#10;Task 1 finished." />
     <MESSAGE value="UTP12&#10;Record finished.&#10;Translate finished.&#10;Database left.&#10;GUI left." />
     <MESSAGE value="UTP12&#10;Record finished.&#10;Translate finished.&#10;Database finished.&#10;GUI finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="UTP12&#10;Record finished.&#10;Translate finished.&#10;Database finished.&#10;GUI finished." />
+    <MESSAGE value="UTP13 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="UTP13 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
